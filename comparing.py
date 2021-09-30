@@ -97,5 +97,5 @@ if __name__ == '__main__':
     ground_truth_df = pd.read_excel(r'mapping.xlsx', engine='openpyxl')
 
     predictions = prediction_creator(redash_df, waze_df)
-    print(type(predictions), len(predictions))
+    print(len(predictions))
     accuracy_statistics(predictions, ground_truth_df)
