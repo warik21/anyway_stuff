@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import requests
 
 
 def is_close(waze_lon, waze_lat, redash_lon, redash_lat):
@@ -40,9 +41,14 @@ def check_compatibility(waze_row, redash_row):
     #and return no number when it's a road.
     same_street = (waze_street == redash_row['street1_hebrew'])
     same_location = is_close(waze_row['long'], waze_row['lat'], redash_row['lon'], redash_row['lat'])
+    # time in the day:
+    waze_time = pd.to_datetime(waze_row['pubMillis'], unit='ms')
+    redash_time = pd.to_datetime(redash_row['date'])
+    time_diff = (abs((waze_time - redash_time).seconds) < 3600)
     if same_day:
         # print('same day')
-        if same_city + same_road + same_road + same_location > 2:
+        # if same_city + same_road + same_location + same_street > 1:
+        if same_city + same_road + same_location + same_location + same_street + time_diff > 2:
             return True
 
 
