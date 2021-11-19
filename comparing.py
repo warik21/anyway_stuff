@@ -29,6 +29,7 @@ def check_compatibility(waze_row, redash_row):
     #there will be an exception for adjacent days.
     #because the objects are generators, we need to take the second element
     waze_row, redash_row = waze_row[1], redash_row[1]
+    print(type(waze_row))
     waze_street = waze_row['street']
     #comparing the day's, and adding a bool to show us which conditions hold
     same_day = (int(redash_row['date'].split('T')[0].split('-')[2]) == int(waze_row['day']))

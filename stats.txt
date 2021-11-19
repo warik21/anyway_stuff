@@ -1,0 +1,13 @@
+[0, 0, 0, 0, 0]	number of occurences: 70945	number of zeros: 70909	number of ones: 36
+[0, 0, 0, 0, 1]	number of occurences: 4492	number of zeros: 4488	number of ones: 4
+[0, 0, 0, 1, 0]	number of occurences: 1548	number of zeros: 1511	number of ones: 37
+[0, 0, 1, 0, 0]	number of occurences: 8	number of zeros: 8		number of ones: 0
+[0, 0, 0, 1, 1]	number of occurences: 101	number of zeros: 94		number of ones: 7
+[0, 1, 0, 0, 0]	number of occurences: 716	number of zeros: 673	number of ones: 43
+[1, 0, 0, 1, 0]	number of occurences: 243	number of zeros: 202	number of ones: 41
+[0, 1, 0, 1, 0]	number of occurences: 237	number of zeros: 209	number of ones: 28
+[1, 0, 0, 1, 1]	number of occurences: 22	number of zeros: 18		number of ones: 4
+[1, 0, 0, 0, 0]	number of occurences: 28	number of zeros: 26		number of ones: 2
+[0, 1, 0, 0, 1]	number of occurences: 16	number of zeros: 16		number of ones: 0
+[0, 1, 0, 1, 1]	number of occurences: 39	number of zeros: 35		number of ones: 4
+[1, 0, 1, 1, 0]	number of occurences: 3	number of zeros: 1		number of ones: 2
